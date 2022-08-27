@@ -3,9 +3,11 @@
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
+import Teacher, { promote } from './teacher';
+// Default import like that import ... from './';
+// Named import like that import {...} from './';
 
 // const { add } = require("lodash");
-
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -70,6 +72,27 @@ console.log(arrowFunction(6));
 // const {street:st, city, country}  = address;
 
 
+// Spread operator 
+
+// const person = { name: 'usman', email: 'usman@gmail.com'};
+// const location = {street: 'street-1', city: 'Lahore', province: 'Punjab'};
+
+// const combined = {...person, ...location, job: 'Front end Developer'};
+// console.log(combined);
+
+// Classes 
+
+
+//const person = new Person('usman');
+//console.log(person); // Both ->
+//person.walk();// have same output
+
+// Inheritance 
+
+
+const teacher = new Teacher('Usman','BSSE', '40,000');
+console.log(teacher);
+promote();
 
 
 
